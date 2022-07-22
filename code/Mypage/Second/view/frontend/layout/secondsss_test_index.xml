@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Index page</title>
+        <css src="Mypage_Second::css/index.css" rel="stylesheet" type="text/css"  />
+    </head>
+    <referenceBlock name="page.main.title" remove="true" />
+    <referenceContainer name="content">
+        <block class="Mypage\Second\Block\Index" name="secondsss_test_index" template="Mypage_Second::index.phtml"/>
+        <block class="Magento\Cms\Block\Block" name="good">
+            <arguments>
+                <argument name="block_id" xsi:type="string">good-day</argument>
+            </arguments>
+        </block>
+        <block class="Magento\Cms\Block\Block" name="rolex-block">
+            <arguments>
+                <argument name="block_id" xsi:type="string">rolex</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+</page>

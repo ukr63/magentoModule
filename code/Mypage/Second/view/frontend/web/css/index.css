@@ -1,0 +1,13 @@
+.fuck {
+    color: red;
+}
+
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+.posts .item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+}

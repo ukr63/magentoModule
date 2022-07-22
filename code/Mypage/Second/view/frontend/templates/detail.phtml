@@ -1,0 +1,26 @@
+
+<?php
+
+$id = isset($_GET['id']) ? (int)$_GET['id'] : false;
+$result = 0;
+if (is_int($id))
+{
+    /** @var \Mypage\Second\Block\Detail $block */
+    $result = $block->getQueryDirect($id);
+
+    // print_r($result);
+
+    // print $result['name'];
+}
+?>
+<?php if ($result): ?>
+<div class="detail">
+    <h1><?=$result['name']?></h1>
+    <p><?=$result['description']?></p>
+
+    <b>Дата створення: <?=$result['created_at']?></b>
+    <dd>Дата останього онов: <?=$result['updated_at']?></dd>
+</div>
+<?php else: ?>
+<h1>Такого допису немає</h1>
+<?php endif ?>

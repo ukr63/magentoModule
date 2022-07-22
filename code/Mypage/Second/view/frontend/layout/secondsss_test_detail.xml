@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <head>
+        <title>Page detail</title>
+    </head>
+    <referenceBlock name="page.main.title" remove="true"></referenceBlock>
+    <referenceContainer name="content">
+        <block class="Mypage\Second\Block\Detail" name="secondsss_test_detail" template="Mypage_Second::detail.phtml"/>
+    </referenceContainer>
+</page>

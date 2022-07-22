@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+<!--        <title>My page</title>-->
+<!--        <css-->
+    </head>
+    <body>
+<!--        <referenceBlock name="page.main.title" remove="true"></referenceBlock>-->
+        <referenceContainer name="content">
+            <block class="Mypage\Second\Block\Bro" name="test_bro" template="Mypage_Second::bro.phtml"></block>
+        </referenceContainer>
+    </body>
+</page>
+

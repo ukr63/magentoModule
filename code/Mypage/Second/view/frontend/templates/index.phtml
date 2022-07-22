@@ -1,0 +1,26 @@
+<pre>
+<?php
+// var_dump($block->getPosts());
+/*
+foreach ($block->getPosts() as $value)
+{
+    print_r($value->getData());
+}
+*/
+var_dump($block->getData());
+?>
+</pre>
+<p class="fuck">Тест</p>
+<div class="posts">
+    <?php foreach ($block->getPosts() as $value): ?>
+    <div class="item">
+        <p><a href="/second/test/detail?id=<?=$value['id']?>"><?=$value['name']?></a></p>
+        <p><?=$value['description']?></p>
+        <b><?=$value['created_at']?></b>
+    </div>
+    <?php endforeach; ?>
+</div>
+
+<?php
+    //echo $this->getLayout()->createBlock(\Magento\Cms\Block\Block::class)->setBlockId('good-day')->toHtml();
+?>
